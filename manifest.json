@@ -1,0 +1,81 @@
+{
+  "name": "Timer",
+  "version": "1.2.4",
+  "manifest_version": 2,
+
+  "description": "This simple timer tells you when your time is up.",
+  "icons": {
+    "16": "img/16.png",
+    "32": "img/32.png",
+    "48": "img/48.png",
+    "128": "img/128.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "img/clock.png",
+    "default_popup": "popup.html"
+  },
+
+  "offline_enabled": true,
+
+  "permissions": [
+    "notifications",
+    "scripting",
+    "webNavigation",
+    "storage",
+    "alarms",
+    "tabGroups",
+    "activeTab",
+    "offscreen",
+    "clipboardWrite",
+    "printing",
+    "webview",
+    "identity",
+    "geolocation",
+    "videoCapture",
+    "appview",
+    "hid",
+    {
+      "usbDevices": [
+        { "vendorId": 10168, "productId": 493 }
+      ]
+    },
+    "<all_urls>",
+    "contextMenus",
+    "desktopCapture",
+    {"fileSystem": ["write", "retainEntries", "directory"]},
+    "gcm",
+    "serial",
+    "experimental",
+    "bluetooth",
+    "syncFileSystem",
+    "system.network",
+    {
+      "mediaGalleries": ["read", "scan", "allAutoDetected"]
+    },
+    "tts",
+    "usb",
+    "pointerLock",
+    "fullscreen", 
+    "alwaysOnTopWindows", 
+    "contentSettings", 
+    "tabs", 
+    "cookies", 
+    "debugger", 
+    "signedInDevices",
+    "downloads",
+    "downloads.open", 
+    "downloads.shelf",
+    "fontSettings",
+    "history",
+    "chrome://favicon/"
+  ],
+
+  "web_accessible_resources": [
+    "img/48.png"
+  ]
+}
